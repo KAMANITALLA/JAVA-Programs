@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0570a0f-adac-4ef3-a033-710b39233c1f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conscience.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DiviseursEntier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ex9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Maxmin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exo2a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exo3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exos09PGCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/intervalle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parité.java" afterDir="false" />
+    <list default="true" id="d0570a0f-adac-4ef3-a033-710b39233c1f" name="Changes" comment="JAVA TEST">
+      <change afterPath="$PROJECT_DIR$/exercice8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exos09PGCD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exos09PGCD.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +62,14 @@
       <option name="presentableId" value="Default" />
       <updated>1666592886182</updated>
     </task>
+    <task id="LOCAL-00001" summary="JAVA TEST">
+      <created>1668523154589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668523154589</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,5 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="JAVA TEST" />
+    <option name="LAST_COMMIT_MESSAGE" value="JAVA TEST" />
   </component>
 </project>
