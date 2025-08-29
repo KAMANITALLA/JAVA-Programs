@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" type="AnchorPane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="default package.OneFXMLController">
+    <stylesheets>
+        <URL value="@onefxml.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="43.0" layoutY="57.0" prefHeight="28.0" prefWidth="182.0" text="NAME" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textname" layoutX="261.0" layoutY="59.0" prefHeight="25.0" prefWidth="301.0" />
+      <TextField fx:id="textlname" layoutX="261.0" layoutY="115.0" prefHeight="25.0" prefWidth="301.0" />
+      <Label alignment="CENTER" layoutX="43.0" layoutY="119.0" prefHeight="17.0" prefWidth="182.0" text="LAST NAME">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="sortie" alignment="CENTER" layoutX="42.0" layoutY="188.0" prefHeight="25.0" prefWidth="529.0">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="108.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnok" prefHeight="25.0" prefWidth="123.0" text="OK">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="350.0" layoutY="300.0" mnemonicParsing="false" onAction="#btnoff" prefHeight="25.0" prefWidth="123.0" text="CLEAR">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</fx:root>

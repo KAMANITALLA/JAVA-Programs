@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <top>
+      <TextField fx:id="tableauDesEntiers" editable="false" onMouseClicked="#random" prefHeight="37.0" prefWidth="285.0" promptText="Enter des entiers" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="30.0" right="30.0" top="40.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Work Sans Regular" size="15.0" />
+         </font>
+      </TextField>
+   </top>
+   <left>
+      <VBox prefHeight="141.0" prefWidth="83.0" spacing="50.0" style="-fx-border-style: solid; -fx-border-radius: 20 0 0 20;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="40.0" left="30.0" />
+         </BorderPane.margin>
+         <children>
+            <RadioButton fx:id="pairs" mnemonicParsing="false" selected="true" text="Pairs" textFill="#002bff">
+               <padding>
+                  <Insets top="60.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="evenOrOdd" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="impairs" mnemonicParsing="false" text="Impairs" textFill="#002bff" toggleGroup="$evenOrOdd">
+               <padding>
+                  <Insets bottom="40.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </RadioButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <GridPane prefHeight="165.0" prefWidth="146.0" style="-fx-border-style: solid; -fx-border-radius: 0 20 20 0;" BorderPane.alignment="TOP_CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="valeur" alignment="CENTER" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="Work Sans Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.9800000190734863" blue="0.40833333134651184" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="indice" alignment="CENTER" prefHeight="37.0" prefWidth="92.0" style="-fx-background-color: white;" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Work Sans Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="precedent" alignment="CENTER" mnemonicParsing="false" onAction="#previous" prefHeight="40.0" prefWidth="70.0" style="-fx-border-style: solid; -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #000000 0.0%, #00fa68 100.0%);" text="Precedent" textFill="WHITE" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="suivant" alignment="CENTER" mnemonicParsing="false" onAction="#next" prefHeight="40.0" prefWidth="70.0" style="-fx-border-style: solid; -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #000000 0.0%, #0005fa 100.0%);" text="Suivant" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="112.0" text="valeur" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Sitka Banner Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="75.0" prefWidth="118.0" text="indice" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Sitka Banner Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="40.0" left="10.0" right="30.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>

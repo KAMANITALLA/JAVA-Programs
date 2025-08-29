@@ -1,0 +1,3 @@
+Hello world6
+Fin du fichier C:\Users\GENERAL STORES\OneDrive\Documents\NetBeansProjects\Java Avance\src\FichiersInputOuput\Hello.txt
+END
